@@ -1,0 +1,225 @@
+/* Author: Jaicke Santos 8 */
+
+@font-face {
+  font-family: 'Noto Serif JP';
+  src: url(../fonts/NotoSerifJP-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url(../fonts/Poppins-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: #FEF2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Backgrounds */
+
+.bg-top {
+  width: 140px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+}
+
+.bg-bottom {
+  width: 140px;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+}
+
+/* Logos */
+
+#logo {
+  margin-top: 50px;
+}
+
+#logo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Lojas */
+
+main, #lojas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#lojas {
+  margin-top: 40px;
+  color: #05332C;
+  font-family: 'Poppins';
+}
+
+#lojas h1 {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+/* Links */
+
+.links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  justify-content: space-between;
+  width: 173px;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+
+.links a {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  border-bottom: solid 1px #FF889F;
+}
+
+
+/* Frase */
+
+#frase img {
+  width: 240px;
+  height: auto;
+}
+
+#frase {
+  padding: 50px 0;
+}
+
+/* accordions */
+
+.accordions {
+  width: 530px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion button {
+  background-color: #FFCCD5 !important;
+  color: #05332C !important;
+}
+
+#accordionNatalRn .accordion-button {
+  padding-left: 68px;
+}
+
+#accordionRibeiraoPretoSp .accordion-button {
+  padding-left: 26px;
+}
+
+.accordion-button {
+  width: 250px;
+  font-size: 15px;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url('../images/seta.svg');
+  background-position: center;
+  transform: rotate(-180deg);
+}
+
+.accordion-button::after {
+  background-image: url('../images/seta.svg');
+  background-position: center;
+}
+
+.accordion-item {
+  border: solid 1px #FF889F;
+  background-color: #FEF2F2;
+}
+
+.accordion-header {
+  font-family: 'Noto Serif JP';
+}
+
+.accordion-body {
+  font-family: 'Poppins';
+  padding: 0;
+}
+
+/* Ícones */
+
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #05332C;
+}
+
+/* Shopee */
+
+#shopee .btn-shopee {
+  background-color: #FFCCD5;
+  padding: 13px 92px;
+  border: solid 1px #FF889F ;
+  border-radius: 2px;
+  color: #05332C;
+  font-weight: 500;
+  font-family: 'Noto Serif JP';
+}
+
+/* footer */
+
+footer {
+  color: #05332C;
+  margin-bottom: 20px;
+  font-size: 13px;
+}
+
+/* Media Query */
+
+@media (max-width: 720px)
+{
+  body {
+    height: 100%;
+  }
+
+  #logo {
+    margin-top: 60px;
+  }
+
+  .bg-top {
+    width: 110px;
+    left: 15px;
+  }
+
+  .bg-bottom {
+    width: 110px;
+    right: 10px;
+    bottom: 55px;
+  }
+
+  .accordions {
+    flex-direction: column;
+    width: auto;
+  }
+
+  #frase {
+    padding: 30px 0;
+  }
+}
+
